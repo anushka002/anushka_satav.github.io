@@ -1,90 +1,131 @@
 ---
-title: Welcome
+title: Intelligent TurtleBot for Real-Time Object Recognition, Voice Interaction and Safe Navigation
 tags:
-- tag1
-- tag2
+- Robotics
+- AI
 ---
 
-## Et poposcerat rursus ad magnus premit
+## Team Information
 
-Lorem markdownum gradus, qui largis, nec pater pleno: fatum. Adspexit cursus
-cur, aut in adhuc crimina **habebat**: pro.
+- Project Name: Intelligent TurtleBot: Deep Learning-Based Object Detection and Voice-Guided Navigation
+- Team Number: 11
+- Team Members: Anushka Gangadhar Satav, Samarjeet, Adithya Konda, Sameerjeet Singh Chhabra
+- Semester: Spring 2025
+- University: Arizona State University
+- Class: RAS 598 Experimentation and Deployment of Robots
+- Professor: Dr. Dan Aukes
+- Email- anushka.satav@asu.edu
 
-- Et ducimus
-- Prosecta hinc nix vidi rettulit cum sitim
-- Has in tonitribus tenebrae Romane mirantum resupina
-- Figuras et dextram
+---
+## Project Plan
 
-## Esse quoque sedem plena nunc iecur
+### Concept: 
+This project explores how a mobile robot can intelligently interact with its surroundings through vision-based object detection and speech-based communication. Using **TurtleBot 4 with Create 3 and Raspberry Pi**, our aim is to integrate:  
 
-Possemque suos dumque. Deum recta rogantem, inquinat facta gigantas; ego nisi
-mea. Nec tamen quae gravem, potens, [cognoscendo
-scripta](http://vidit-lumine.io/sinusdeum). *Nihil ventis Aeneae* probat.
+- **Real-time object detection** using **YOLOv8** for recognizing and categorizing objects in the environment.  
+- **Voice command interaction** for user control, allowing spoken instructions to guide the robot's behavior.  
+- **Autonomous navigation** with obstacle avoidance, ensuring safe and efficient movement in dynamic spaces.  
+- **Dynamic responses** based on detected objects, enabling context-aware robotic actions.  
+- **Fallback mechanisms** for handling hardware/software limitations and ensuring system robustness.  
 
-1. listum primo
 
-    discusso el codex:
+### Research Question: 
+How can a mobile robot effectively combine vision, speech, and autonomous navigation to create a responsive and interactive system in real-world environments?
 
-        if (pimProgressiveMashup(recursive_upnp_barcraft, seo) == file.station_leaf(
-                optical + 1, compact_docking)) {
-            rt_programming_system(udpScraping, marketRegularMetal,
-                    threadingNuiRoom);
-            vlogVaporwarePage += 5 + xhtmlDiskReader;
-            access.kbps_footer.dialogZettabyte(3, cloud_midi_spoofing, ipad_macro);
-        }
-        if (maskProcessorKbps(programming, user, cache_web) >= file *
-                publishingDual) {
-            hibernate.flash_network -= 4;
-            bar = goodput_flash;
-            streaming = voip_flatbed - 1;
-        } else {
-            clipCd(jquery, 55 - -1, touchscreen);
-            plagiarism_command_e = cleanHardIcio;
-            recursion = checksum;
-        }
-        clock(roomCaptcha, 2);
+---
+## Sensor Integration
 
-2. listum secundum
+### Utilization of Sensor Data
 
-    > warningum alertum
+- **Depth Camera (OAK-D/RealSense)**: Object detection and distance estimation.
+- **LiDAR**: SLAM-based navigation and obstacle detection.
+- **IMU**: Enhancing motion stability and drift correction.
+- **Microphone**: Capturing voice commands.
+- **Speaker**: Responding with audio feedback.
 
-3. listum adnauseum
+### Testing and Demonstration
 
-## Pondus ante Ialysios vultu exasperat loqui sanguine
+- **Unit Testing**: Each sensor tested in isolation.
+- **Integration Testing**: Validating sensor fusion for decision-making.
+- **Final Demonstration**: Robot detects objects, responds to queries, follows voice commands, and navigates autonomously.
 
-Iacere non, quis nimbis. Dumque tibi minora clamabat contigit vacant, sepulcro
-coniugis quae; mihi! Solent adeste faventibus, perque penates, currere in quater
-Odrysius ferro, vota, vero mittat crinibus, quae. Hanc mundi, ipse vultu voce
-sub quae heros forsitan imagine in tecum Cephalus? Formosissimus vela; vapore
-oris, aera, utendum ostendisse regnum Centaurorum elice.
+---
+## Interaction Mechanism
 
-    if (searchVrmlCpm <= traceroute) {
-        bittorrentExbibyte = del;
-        fsb_left = -2 + lifoTypeSpam;
-        sync.bcc(errorAtm(66, boot, link), meta_personal_hdd, leak.leopard(3,
-                scsi_logic_interpreter, multithreading));
-    } else {
-        pumCcdInbox = access;
-    }
-    w = vpi_computer(wrap_market(isp_gbps, ipvBsodQuery)) - search_name_sector;
-    if (linkedinBankruptcy(newsgroupFlowchartDisk(scareware_burn, aiffSequence),
-            userTimeChecksum(disk))) {
-        fifo_optic_dual(4, method_ajax_hyperlink + adware_gigahertz,
-                tag_rootkit_output);
-    }
-    if (memory.fsb(client_template, typeface_memory_bridge) < newbie_socket_gif(
-            storageModemDrive, kilohertz_yottabyte_middleware)) {
-        dimm.dvd_character.hover(hibernate);
-        exif = unmountVirusRss * 5;
-    } else {
-        localhost_adapter += character_olap_white;
-        subnet(internal_dongle + card);
-    }
-    var hibernateAlert = formatCmsCompression(1 / and_tcp + 5);
+### Behavioral Influence & Interfaces
 
-Miserande evanida amanti, succiduo, dare mihi quid amnis venit Rhadamanthus.
-Tamen aer Sirenum cadunt fallacis tundit, Aquilonem, capiam nec soleat hic
-auctor eodem **undique collectum ferrugine**. Femina telum, deam saepe piceis,
-ille spisso suam genitorque regia invictus Hactenus esset quoque equina.
-Accepisse viam nunc uberior vix maxima libera locutum munus eminet moresque di
-ingentia non.
+- **Voice Command API**: Users instruct the robot using predefined phrases.
+- **ROS2 RQT GUI/Web Dashboard**: For remote monitoring.
+
+*(Include a professional-looking UI sketch showing how users will interact with the system.)*
+
+## Control & Autonomy
+
+- **Sensor-Driven Control Loop**: Robot makes decisions based on camera, LiDAR, and IMU inputs.
+- **ROS2 Navigation Stack**: Used for path planning and movement.
+- **Hierarchical Decision Model**: Combining high-level commands with low-level execution.
+
+---
+## Preparation Needs
+
+### Required Knowledge & Topics for Success
+
+- **Deep Learning for Object Detection** (YOLOv8, OpenCV)
+- **ROS2 Navigation & Collision Avoidancve**
+- **Speech Recognition**
+- **Hardware-Level Control for TurtleBot 4**
+
+---
+## Final Demonstration Plan
+
+### Setup & Execution
+
+- **Classroom Resources**: Open space for navigation demo.
+- **Demonstration Steps**: The robot will identify objects, respond to user queries, navigate obstacles, and execute spoken commands.
+
+### Handling Environmental Variability (future scope)
+
+- **Adaptive Algorithms**: Adjust object detection thresholds dynamically.
+- **Fallback Modes**: If detection fails, switch to manual control or alternative recognition models.
+
+### Testing & Evaluation Plan
+
+- **Simulated Testing in Gazebo** before real-world deployment.
+- **Comparison Metrics**:
+  - Object recognition accuracy.
+  - Speech command response time.
+  - Navigation success rate.
+
+---
+## Impact
+
+This project will:
+
+- Advance AI-driven robotics interactions for smart environments.
+- Develop speech-integrated autonomous systems.
+- Provide students hands-on experience with ROS2, AI, and embedded systems.
+- Potentially contribute to assistive robotics research.
+
+---
+## Advising & Resources
+
+### Project Advisor
+
+- **Dr. Aukes** 
+- **Resource Needs**: Hardware support, mentorship on TurtleBot4 Hardware integration with ROS2.
+
+---
+## Weekly Milestones & Gantt Chart (Weeks 7-16)
+
+| **Week** | **Milestone** |
+|----------|--------------|
+| **24-02-25**  | Finalizing project scope, confirming sensor availability. |
+| **27-02-25**  | Setting up ROS2 communication between Raspberry Pi and host machine. |
+| **03-03-25**  | Implementing object detection pipeline. |
+| **03-03-25** | Developing speech recognition module. |
+| **11-03-25** | Testing navigation with LiDAR and obstacle avoidance. |
+| **15-03-25** | Integrating all modules for unified control. |
+| **18-03-25** | Conducting real-world tests and debugging issues. |
+| **21-03-25** | Preparing final demonstration setup. |
+| **27-03-25** | Final testing, documentation, and advisor review. |
+| **28-03-25** | Demonstration and final project submission. |
