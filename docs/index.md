@@ -7,20 +7,20 @@ tags:
 
 ## Team Information
 
-- Project Name: Intelligent TurtleBot: Deep Learning-Based Object Detection and Voice-Guided Navigation
-- Team Number: 11
-- Team Members: Anushka Gangadhar Satav, Samarjeet, Adithya Konda, Sameerjeet Singh Chhabra
-- Semester: Spring 2025
-- University: Arizona State University
-- Class: RAS 598 Experimentation and Deployment of Robots
-- Professor: Dr. Dan Aukes
-- Email- anushka.satav@asu.edu
+- **Project Name:** Intelligent TurtleBot: Deep Learning-Based Object Detection and Voice-Guided Navigation
+- **Team Number:** 11
+- **Team Members:** Anushka Gangadhar Satav, Adithya Konda, Sameerjeet Singh Chhabra
+- **Semester:** Spring 2025
+- **University:** Arizona State University
+- **Class:** RAS 598 Experimentation and Deployment of Robots
+- **Professor:** Dr. Dan Aukes
+- **Email:** anushka.satav@asu.edu
 
 ---
 ## Project Plan
 
 ### Concept: 
-This project explores how a mobile robot can intelligently interact with its surroundings through vision-based object detection and speech-based communication. Using **TurtleBot 4 with Create 3 and Raspberry Pi**, our aim is to integrate:  
+This project explores how TurtleBot4 can intelligently interact with its surroundings through vision-based object detection and speech-based communication. Using **TurtleBot 4 with Create 3 and Raspberry Pi**, our aim is to integrate:  
 
 - **Real-time object detection** using **YOLOv8** for recognizing and categorizing objects in the environment.  
 - **Voice command interaction** for user control, allowing spoken instructions to guide the robot's behavior.  
@@ -28,14 +28,16 @@ This project explores how a mobile robot can intelligently interact with its sur
 - **Dynamic responses** based on detected objects, enabling context-aware robotic actions.  
 - **Fallback mechanisms** for handling hardware/software limitations and ensuring system robustness.  
 
-
-### Research Question: 
-How can a mobile robot effectively combine vision, speech, and autonomous navigation to create a responsive and interactive system in real-world environments?
+> Research Question: 
+> How can a mobile robot effectively combine vision, speech, and autonomous navigation to create a responsive and interactive system in real-world environments?
 
 ---
 ## Sensor Integration
 
 ### Utilization of Sensor Data
+
+![TurtleBotsFacing](https://github.com/user-attachments/assets/dfe928cf-b7cf-4cf4-82e4-b80c5853edfc)
+
 
 - **Depth Camera (OAK-D/RealSense)**: Object detection and distance estimation.
 - **LiDAR**: SLAM-based navigation and obstacle detection.
@@ -105,6 +107,15 @@ This project will:
 - Develop speech-integrated autonomous systems.
 - Provide students hands-on experience with ROS2, AI, and embedded systems.
 - Potentially contribute to assistive robotics research.
+---
+
+
+## References (Subject to change with the flow of the Project):
+
+1. Deep Learning model options: https://yolov8.com/
+2. Speech Recognition Libraries: https://pypi.org/project/SpeechRecognition/
+3. Turtlebot4 Mapping Resource: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/generate_map.html
+4. Mapping, Localizing, Path planning packages for Turtlebot4: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/turtlebot4_navigator.html
 
 ---
 ## Advising & Resources
