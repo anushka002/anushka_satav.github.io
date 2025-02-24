@@ -29,7 +29,7 @@
 
     
       
-        <title>ESP32 Table - EGR314 Report Template</title>
+        <title>Sensors Table - EGR314 Report Template</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#turtlebot-4-sensor-table" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ESP32 Table
+              Sensors Table
             
           </span>
         </div>
@@ -238,7 +243,7 @@
   
     
   
-  ESP32 Table
+  Sensors Table
 
       </a>
     </li>
@@ -420,15 +425,50 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sensors Table
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    ESP32 Table
+    Sensors Table
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#turtlebot-4-sensor-table" class="md-nav__link">
+    TurtleBot 4 Sensor Table
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -574,6 +614,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#turtlebot-4-sensor-table" class="md-nav__link">
+    TurtleBot 4 Sensor Table
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -595,161 +650,45 @@
   
 
 
-  <h1>ESP32 Table</h1>
+  <h1>Sensors Table</h1>
 
+<h3 id="turtlebot-4-sensor-table"><strong>TurtleBot 4 Sensor Table</strong></h3>
 <table>
 <thead>
 <tr>
-<th>ESP Info</th>
-<th>Answer</th>
-<th>Help</th>
+<th><strong>Sensor</strong></th>
+<th><strong>Implementation</strong></th>
+<th><strong>Image</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Model</td>
-<td>?</td>
-<td>Include the entire part number (leave off any letters at the end that specify the package type)</td>
+<td><strong>Depth Camera- OAK-D-Pro)</strong></td>
+<td>Object detection and distance estimation</td>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/c8d24fc5-43ca-472e-8b87-457bf03e5386" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Depth Camera" src="https://github.com/user-attachments/assets/c8d24fc5-43ca-472e-8b87-457bf03e5386" /></a></td>
 </tr>
 <tr>
-<td>Product Page URL</td>
-<td>?</td>
-<td>Found on Espressif.com</td>
+<td><strong>LiDAR- RPLIDAR A1M8</strong></td>
+<td>SLAM-based navigation and obstacle detection</td>
+<td><a class="glightbox" href="https://github.com/user-attachments/assets/61bd3394-74c4-4f4c-b989-9d63fbd989a9" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="LiDAR" src="https://github.com/user-attachments/assets/61bd3394-74c4-4f4c-b989-9d63fbd989a9" /></a></td>
 </tr>
 <tr>
-<td>ESP32-S3-WROOM-1-N4 Datasheet URL</td>
-<td>?</td>
-<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>ESP32 S3 Datasheet URL</td>
-<td>?</td>
-<td>Has more detail on functions</td>
-</tr>
-<tr>
-<td>ESP32 S3 Technical Reference Manual URL</td>
-<td>?</td>
-<td>Has details on I/O multiplexing, USB, and others</td>
-</tr>
-<tr>
-<td>Vendor link</td>
-<td>?</td>
-<td>Digikey, Jameco, etc.  Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>Code Examples</td>
-<td>?</td>
-<td>url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals</td>
-</tr>
-<tr>
-<td>External Resources URL(s)</td>
-<td>?</td>
-<td>Search on Google and YouTube for other resources for each specific microcontroller.</td>
-</tr>
-<tr>
-<td>Unit cost</td>
-<td>?</td>
-<td>Find on Digikey, Jameco, MPJA, or octopart</td>
-</tr>
-<tr>
-<td>Absolute Maximum Current for entire IC</td>
-<td>?</td>
-<td>Find in the microcontroller datasheet</td>
-</tr>
-<tr>
-<td>Supply Voltage Range</td>
-<td>?</td>
-<td>Min / Nominal / Max / Absolute Max, as found in datasheet</td>
-</tr>
-<tr>
-<td>Absolute Maximum current <br> (for entire IC)</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Maximum GPIO current <br> (per pin)</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Supports External Interrupts?</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Required Programming Hardware, Cost, URL</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Module</th>
-<th># Available</th>
-<th>Needed</th>
-<th>Associated Pins (or * for any)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UART</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>external SPI*</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>GPIO</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>ADC</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>LED PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>Motor PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr>
-<td>USB Programmer</td>
-<td>?</td>
-<td>1</td>
-<td>?</td>
-</tr>
-<tr>
-<td>...</td>
+<td><strong>IMU</strong></td>
+<td>Enhancing motion stability and drift correction</td>
 <td></td>
+</tr>
+<tr>
+<td><strong>Microphone</strong></td>
+<td>Capturing voice commands</td>
 <td></td>
+</tr>
+<tr>
+<td><strong>Speaker</strong></td>
+<td>Responding with audio feedback on Host PC</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p>* The ESP32-S2 has multiple SPI interfaces, but some are for internal use</p>
 
 
 
