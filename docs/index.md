@@ -19,7 +19,8 @@ tags:
 ---
 ## Project Plan
 
-### Concept: 
+**Concept:** 
+
 This project explores how TurtleBot4 can intelligently interact with its surroundings through vision-based object detection and speech-based communication. Using **TurtleBot 4 with Create 3 and Raspberry Pi**, our aim is to integrate:  
 
 - **Real-time object detection** using **YOLOv8** for recognizing and categorizing objects in the environment.  
@@ -34,10 +35,11 @@ This project explores how TurtleBot4 can intelligently interact with its surroun
 ---
 ## Sensor Integration
 
-### Utilization of Sensor Data
+**Utilization of Sensor Data**
 
 ![TurtleBotsFacing](https://github.com/user-attachments/assets/dfe928cf-b7cf-4cf4-82e4-b80c5853edfc)
 
+> Check Sensors Table for more Information
 
 - **Depth Camera (OAK-D/RealSense)**: Object detection and distance estimation.
 - **LiDAR**: SLAM-based navigation and obstacle detection.
@@ -45,7 +47,7 @@ This project explores how TurtleBot4 can intelligently interact with its surroun
 - **Microphone**: Capturing voice commands.
 - **Speaker**: Responding with audio feedback.
 
-### Testing and Demonstration
+**Testing and Demonstration**
 
 - **Unit Testing**: Each sensor tested in isolation.
 - **Integration Testing**: Validating sensor fusion for decision-making.
@@ -54,7 +56,7 @@ This project explores how TurtleBot4 can intelligently interact with its surroun
 ---
 ## Interaction Mechanism
 
-### Behavioral Influence & Interfaces
+**Behavioral Influence & Interfaces**
 
 - **Voice Command API**: Users instruct the robot using predefined phrases.
 - **ROS2 RQT GUI/Web Dashboard**: For remote monitoring.
@@ -67,15 +69,31 @@ This project explores how TurtleBot4 can intelligently interact with its surroun
 - **ROS2 Navigation Stack**: Used for path planning and movement.
 - **Hierarchical Decision Model**: Combining high-level commands with low-level execution.
 
+
+
 ---
 ## Preparation Needs
 
 ### Required Knowledge & Topics for Success
 
 - **Deep Learning for Object Detection** (YOLOv8, OpenCV)
-- **ROS2 Navigation & Collision Avoidancve**
+  
+  ![1_HctUSTC6_-OSWmCtTwmdeQ](https://github.com/user-attachments/assets/b6a43a67-39f3-478a-89bd-19b4d52bfc7f)
+
+- **ROS2 Navigation & Collision Avoidance**
+  
+  ![turtlebot4](https://github.com/user-attachments/assets/688f6b41-9997-4dbe-bbdc-381155b9fe72)
+
 - **Speech Recognition**
+  
+  ![download](https://github.com/user-attachments/assets/2f24f9f2-9335-4004-8189-de530818126a)
+
 - **Hardware-Level Control for TurtleBot 4**
+  
+  Using communication between Host PC and TurtleBot4 to take Voice Commands as inputs and perform Pre-defined Actions
+
+  ![images](https://github.com/user-attachments/assets/6b89eaaf-8b66-48bb-af69-54fefb0fac88)
+
 
 ---
 ## Final Demonstration Plan
@@ -110,19 +128,20 @@ This project will:
 ---
 
 
-## References (Subject to change with the flow of the Project):
+## References *(Subject to change)*:
 
 1. Deep Learning model options: https://yolov8.com/
-2. Speech Recognition Libraries: https://pypi.org/project/SpeechRecognition/
-3. Turtlebot4 Mapping Resource: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/generate_map.html
-4. Mapping, Localizing, Path planning packages for Turtlebot4: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/turtlebot4_navigator.html
+2. YOLOv8 example: https://rs-punia.medium.com/building-a-real-time-object-detection-and-tracking-app-with-yolov8-and-streamlit-part-1-30c56f5eb956
+3. Speech Recognition Libraries: https://pypi.org/project/SpeechRecognition/
+4. Turtlebot4 Mapping Resource: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/generate_map.html
+5. Mapping, Localizing, Path planning packages for Turtlebot4: https://turtlebot.github.io/turtlebot4-user-manual/tutorials/turtlebot4_navigator.html
 
 ---
 ## Advising & Resources
 
 ### Project Advisor
 
-- **Dr. Aukes** 
+- **Dr. Daniel Aukes** 
 - **Resource Needs**: Hardware support, mentorship on TurtleBot4 Hardware integration with ROS2.
 
 ---
